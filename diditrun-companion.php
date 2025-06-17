@@ -9,6 +9,7 @@
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: diditrun-companion
+ * GitHub Plugin URI: https://github.com/vegasgeek/diditrun-companion
  *
  * @package diditrun-companion
  */
