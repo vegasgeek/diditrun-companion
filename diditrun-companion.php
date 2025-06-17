@@ -3,7 +3,7 @@
  * Plugin Name: Did It Run Companion
  * Plugin URI: https://diditrun.dev
  * Description: Companion plugin for Did It Run? monitoring service.
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: VegasGeek
  * Author URI: https://vegasgeek.com
  * License: GPL v2 or later
