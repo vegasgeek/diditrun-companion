@@ -86,7 +86,7 @@ function diditrun_companion_settings_page() {
 /**
  * Enqueue admin scripts for the Did It Run Companion plugin.
  *
- * Enqueues the dirms.js file for the Did It Run Companion plugin,
+ * Enqueues the diditrun.js file for the Did It Run Companion plugin,
  * which contains the JavaScript code for the test connection button.
  *
  * @param string $hook The current admin page.
@@ -107,7 +107,7 @@ function diditrun_companion_admin_scripts( $hook ) {
 
 	wp_localize_script(
 		'diditrun-companion-admin',
-		'dirmsCompanion',
+		'diditrunCompanion',
 		array(
 			'ajaxUrl' => admin_url( 'admin-ajax.php' ),
 			'nonce'   => wp_create_nonce( 'diditrun_test_connection' ),
@@ -136,7 +136,7 @@ function diditrun_companion_test_connection() {
 	}
 
 	$response = wp_remote_post(
-		'https://diditrun.dev/wp-json/dirms/v1/test-connection',
+		'https://diditrun.dev/wp-json/diditrun/v1/test-connection',
 		array(
 			'method'    => 'POST',
 			'body'      => array( 'api_key' => $api_key ),

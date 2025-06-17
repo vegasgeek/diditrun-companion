@@ -22,7 +22,7 @@ function diditrun_send_checkin( string $event_key ): bool {
 		return false;
 	}
 
-	$api_url = 'https://diditrun.dev/wp-json/dirms/v1/checkin';
+	$api_url = 'https://diditrun.dev/wp-json/diditrun/v1/checkin';
 
 	$response = wp_remote_post(
 		$api_url,
@@ -54,7 +54,7 @@ function diditrun_send_test_connection(): bool {
 		return false;
 	}
 
-	$api_url = 'https://diditrun.dev/wp-json/dirms/v1/test-connection';
+	$api_url = 'https://diditrun.dev/wp-json/diditrun/v1/test-connection';
 
 	$response = wp_remote_post(
 		$api_url,
