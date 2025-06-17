@@ -11,12 +11,12 @@
  * @param string $event_key The event created at the Did It Run website.
  * @return bool True if check-in was successful, false otherwise.
  */
-function dirms_send_checkin( string $event_key ): bool {
+function diditrun_send_checkin( string $event_key ): bool {
 	if ( ! $event_key ) {
 		return false;
 	}
 
-	$api_key = get_option( 'dirms_api_key', '' ) ?? false;
+	$api_key = get_option( 'diditrun_api_key', '' ) ?? false;
 
 	if ( ! $api_key ) {
 		return false;
@@ -47,8 +47,8 @@ function dirms_send_checkin( string $event_key ): bool {
  *
  * @return bool True if test connection was successful, false otherwise.
  */
-function dirms_send_test_connection(): bool {
-	$api_key = get_option( 'dirms_api_key', '' ) ?? false;
+function diditrun_send_test_connection(): bool {
+	$api_key = get_option( 'diditrun_api_key', '' ) ?? false;
 
 	if ( ! $api_key ) {
 		return false;

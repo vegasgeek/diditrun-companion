@@ -21,13 +21,12 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'DIRMS_COMPANION_VERSION', '1.0.4' );
-define( 'DIRMS_COMPANION_PATH', plugin_dir_path( __FILE__ ) );
-define( 'DIRMS_COMPANION_URL', plugin_dir_url( __FILE__ ) );
+define( 'DIDITRUN_COMPANION_PATH', plugin_dir_path( __FILE__ ) );
+define( 'DIDITRUN_COMPANION_URL', plugin_dir_url( __FILE__ ) );
 
 // Include admin functionality.
-require_once DIRMS_COMPANION_PATH . 'includes/diditrun-admin.php';
-require_once DIRMS_COMPANION_PATH . 'includes/functions.php';
+require_once DIDITRUN_COMPANION_PATH . 'includes/diditrun-admin.php';
+require_once DIDITRUN_COMPANION_PATH . 'includes/functions.php';
 
 require_once __DIR__ . '/vendor/afragen/git-updater-lite/Lite.php';
 ( new \Fragen\Git_Updater\Lite( __FILE__ ) )->run();
