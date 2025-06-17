@@ -3,7 +3,7 @@
  * Plugin Name: Did It Run Companion
  * Plugin URI: https://diditrun.dev
  * Description: Companion plugin for Did It Run? monitoring service.
- * Version: 1.0.5
+ * Version: 1.0.8
  * Author: VegasGeek
  * Author URI: https://vegasgeek.com
  * License: GPL v2 or later
@@ -27,6 +27,7 @@ define( 'DIDITRUN_COMPANION_URL', plugin_dir_url( __FILE__ ) );
 require_once DIDITRUN_COMPANION_PATH . 'includes/diditrun-admin.php';
 require_once DIDITRUN_COMPANION_PATH . 'includes/functions.php';
 
+// Check for plugin updates.
 require 'vendor/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
