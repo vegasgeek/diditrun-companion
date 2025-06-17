@@ -1,29 +1,29 @@
 jQuery(document).ready(function($) {
     // Update the test connection button state based on the API key being present.
     function updateTestButtonState() {
-        var apiKey = $('#itto_api_key').val();
-        $('#itto-test-connection-button').prop('disabled', !apiKey);
+        var apiKey = $('#diditrun_api_key').val();
+        $('#diditrun-test-connection-button').prop('disabled', !apiKey);
     }
 
     // Initial state check.
     updateTestButtonState();
 
     // Handle test connection form submission.
-    $('#itto-test-connection-form').on('submit', function(e) {
+    $('#diditrun-test-connection-form').on('submit', function(e) {
         e.preventDefault();
         
-        var $button = $('#itto-test-connection-button');
-        var $result = $('#itto-test-connection-result');
+        var $button = $('#diditrun-test-connection-button');
+        var $result = $('#diditrun-test-connection-result');
         
         $button.prop('disabled', true);
         $result.html('<p>Testing connection...</p>');
         
         $.ajax({
-            url: ittoCompanion.ajaxUrl,
+            url: diditrunCompanion.ajaxUrl,
             type: 'POST',
             data: {
-                action: 'itto_companion_test_connection',
-                nonce: ittoCompanion.nonce
+                action: 'diditrun_companion_test_connection',
+                nonce: diditrunCompanion.nonce
             },
             success: function(response) {
                 if (response.success) {

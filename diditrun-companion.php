@@ -10,7 +10,7 @@
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: diditrun-companion
  *
- * @package itto-companion
+ * @package diditrun-companion
  */
 
 define( 'DIRMS_COMPANION_VERSION', '1.0.4' );
